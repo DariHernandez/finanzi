@@ -1,0 +1,57 @@
+header
+    font-family: 'Open Sans', sans-serif
+
+    width: 100%
+
+    .top-bar
+        width: 100%
+        background-color: $color_a
+
+
+        .content
+            display: flex
+            align-items: center
+            justify-content: space-between
+            margin: 0 auto
+            height: 30px
+
+            .links
+                display: flex
+                align-items: center
+                justify-content: center
+
+
+                .link
+                    display: flex
+                    align-items: center
+                    justify-content: center
+                    margin-right: 20px
+
+                    .icon
+                        height: 10px
+                        width: 10px
+                        margin-right: 5px
+                        display: inline-block
+                        fill: $color_b
+
+                    a, p
+                        display: inline-block
+                        font-size: 10px
+                        color: $color_d
+                    
+                    a:hover
+                        color: $color_b
+
+            .top-btn
+                border: none
+                background-color: $color_b
+                color: $color_c
+                height: 100%
+                padding: 0 20px
+                cursor: pointer
+                display: inline-block
+                font-size: 13px
+                line-height: 30px
+
+                &:hover
+                    background-color: rgba($color_b, 0.9)
