@@ -1,0 +1,205 @@
+footer
+    font-family: 'Open Sans', sans-serif
+    color: $color_d
+
+    .top
+        width: 100%
+        background-color: $color-a
+        padding: 40px 0
+
+        .content
+            display: flex
+            align-items: center
+            justify-content: space-between
+
+            .btn.small-cta
+                padding: 10px 30px
+
+        h2
+            margin: 0
+            padding: 0
+
+    .middle
+        background-color: rgba($color_c, 0.85)
+        padding-top: 50px
+        padding-bottom: 80px
+
+        .contact-cards
+            display: flex
+            align-items: center
+            justify-content: space-between
+            padding-bottom: 80px
+
+            .card
+                display: flex
+                align-items: center
+                justify-content: center
+                border-bottom: 3px solid $color_b
+                transition-duration: $transition-duration
+
+                &:hover
+                    background-color: $color_c
+
+                .icon
+                    width: 30px
+                    height: 30px
+                    fill: $color_b
+                    padding: 30px
+                    border: 2px solid rgba($color_d, 0.1)
+                    border-bottom: none
+                
+                p, a
+                    height: 30px
+                    color: $color_d
+                    font-size: 12px
+                    color: rgba($color_d, 0.8)
+                    padding: 30px 15px
+                    margin: 0
+                    border: 2px solid rgba($color_d, 0.1)
+                    border-left: 0
+                    border-bottom: none
+                    transition-duration: $transition-duration
+
+                    span
+                        color: $color_d
+                        display: block
+                        font-size: 16px
+                        font-weight: bold
+
+                a:hover
+                    span
+                        color: $color_b
+
+
+        .widgets
+            display: flex
+            align-items: flex-start
+            justify-content: space-between
+            font-size: 12px
+
+            h4
+                font-size: 13px
+                font-weight: 800
+                line-height: 60px
+                margin-top: 0
+                margin-bottom: 30px
+
+            article
+                width: 22%
+
+            .socials
+                .logo
+                    width: auto
+                    height: 60px
+                    margin-bottom: 30px
+                    justify-content: flex-start
+                    
+
+                    img
+                        width: auto
+                        height: 80%
+                        max-width: 100%
+                
+                address
+                    span
+                        margin-bottom: 30px
+                        display: block
+
+                .icons
+                    margin-top: 50px
+                    display: flex
+                    align-items: center
+                    justify-content: flex-start
+
+                    .icon
+                        border-radius: 50%
+                        fill: $color_c
+                        background-color: $color_b
+                        width: 10px
+                        height: 10px
+                        padding: 10px
+                        margin-right: 5px
+                
+            .posts
+                a
+                    color: $color_d
+                    margin-bottom: 25px
+                    display: block
+
+                    &:hover
+                        color: $color_b
+
+                    .metadata
+                        color: rgba($color_d, 0.5)
+
+                        svg
+                            fill: rgba($color_d, 0.5)
+                            width: 8px
+                            height: 8px
+                            margin-right: 5px
+                            margin-top: 15px
+ 
+            .pages
+                ul
+                    margin: 0
+                    padding: 0
+
+                    li
+                        list-style: none
+
+                        a
+                            color: $color_b
+                            margin-bottom: 20px
+                            display: block
+
+                            &:hover
+                                color: $color_d
+            
+            .suscribe
+                p
+                    font-size: 12px
+                    margin-bottom: 20px
+                
+                form
+                    margin: 0
+                    padding: 0
+                    display: flex
+                    align-items: center
+                    justify-content: center
+                    margin-bottom: 20px
+
+                    input, button
+                        border: none
+                        margin: 0
+                        padding: 0
+
+                    input[type="email"]
+                        width: calc(100% - 35px * 2)
+                        height: 35px
+                        padding: 0 20px
+
+                        &:focus
+                            outline: none
+                            border: 2px solid $color_a
+                            width: calc(100% - 35px * 2 - 4px)
+                            height: calc(35px - 4px)
+
+                    button
+                        width: 35px
+                        height: 35px
+                        background-color: $color_a
+                        cursor: pointer
+
+                        .icon
+                            width: 15px
+                            height: 15px
+                            fill: $color_d
+                            margin: 0
+                            padding: 0
+                            
+    .bottom
+        background-color: $color_c
+
+        .content
+            padding: 25px 0
+            
