@@ -97,5 +97,49 @@ header .top-bar .content .top-btn {
 header .top-bar .content .top-btn:hover {
   background-color: rgba(225, 208, 108, 0.9);
 }
+header .menu {
+  width: 100%;
+}
+header .menu .content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+header .menu .content .logo {
+  width: 150px;
+  height: auto;
+  margin: 15px 0;
+}
+header .menu .content .logo img {
+  height: inherit;
+  width: inherit;
+}
+header .menu .content ul {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+header .menu .content ul li {
+  list-style: none;
+  font-size: 12px;
+}
+header .menu .content ul li a {
+  color: #222222;
+  font-weight: bold;
+  transition-duration: 0.5s;
+  padding: 0 15px;
+  height: 40px;
+  display: inline-block;
+  line-height: 40px;
+}
+header .menu .content ul li a.active {
+  color: #009144;
+  cursor: none;
+}
+header .menu .content ul li a:hover:not(.active) {
+  color: #009144;
+  font-size: 14px;
+}
 
 /*# sourceMappingURL=styles.css.map */

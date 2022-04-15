@@ -55,3 +55,48 @@ header
 
                 &:hover
                     background-color: rgba($color_b, 0.9)
+
+    .menu
+        width: 100%
+        
+        .content
+            display: flex
+            align-items: center
+            justify-content: space-between
+            margin: 0 auto
+
+            .logo
+                width: 150px
+                height: auto
+                margin: 15px 0
+
+                img
+                    height: inherit
+                    width: inherit
+            
+            ul
+                display: flex
+                align-items: center
+                justify-content: flex-end
+
+                li
+                    list-style: none
+                    font-size: 12px
+
+                    a
+                        color: $color_c
+                        font-weight: bold
+                        transition-duration: $transition-duration
+                        padding: 0 15px
+                        height: 40px
+                        display: inline-block
+                        line-height: 40px
+
+                        &.active
+                            color: $color_a
+                            cursor: none
+
+                        &:hover:not(.active)
+                            color: $color_a
+                            font-size: 14px
+
