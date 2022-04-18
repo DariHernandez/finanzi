@@ -70,6 +70,9 @@ header {
   position: sticky;
   top: -30px;
 }
+header.sticky {
+  border-bottom: 1px solid rgba(34, 34, 34, 0.3);
+}
 header .top-bar {
   width: 100%;
   background-color: #009144;

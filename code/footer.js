@@ -1,4 +1,4 @@
-var go_top = document.querySelector ("#go-top")
+const go_top = document.querySelector ("#go-top")
 
 go_top.addEventListener ("click", function (e) {
     console.log ("go top")
