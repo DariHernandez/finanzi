@@ -2,25 +2,25 @@ footer
     font-family: 'Open Sans', sans-serif
     color: $color_d
 
-    .top
-        width: 100%
-        background-color: $color-a
-        padding: 40px 0
+    // .top
+    //     width: 100%
+    //     background-color: $color-a
+    //     padding: 40px 0
 
-        .content
-            display: flex
-            align-items: center
-            justify-content: space-between
+    //     .content
+    //         display: flex
+    //         align-items: center
+    //         justify-content: space-between
 
-            .btn.small-cta
-                padding: 10px 30px
+    //         .btn.small-cta
+    //             padding: 10px 30px
 
-        h2
-            margin: 0
-            padding: 0
+    //     h2
+    //         margin: 0
+    //         padding: 0
 
     .middle
-        background-color: rgba($color_c, 0.85)
+        background-color: rgba($color_e, 0.85)
         padding-top: 50px
         padding-bottom: 80px
 
@@ -28,7 +28,7 @@ footer
             display: flex
             align-items: center
             justify-content: space-between
-            padding-bottom: 80px
+            padding-bottom: 50px
 
             .card
                 display: flex
@@ -36,9 +36,10 @@ footer
                 justify-content: center
                 border-bottom: 3px solid $color_b
                 transition-duration: $transition-duration
+                width: 30% 
 
                 &:hover
-                    background-color: $color_c
+                    background-color: $color_e
 
                 .icon
                     width: 30px
@@ -48,23 +49,30 @@ footer
                     border: 2px solid rgba($color_d, 0.1)
                     border-bottom: none
                 
-                p, a
-                    height: 30px
-                    color: $color_d
-                    font-size: 12px
-                    color: rgba($color_d, 0.8)
-                    padding: 30px 15px
-                    margin: 0
+                .text-wrapper
+                    width: calc(100% - 30px)
+                    display: flex
+                    align-items: center
+                    justify-content: center
                     border: 2px solid rgba($color_d, 0.1)
                     border-left: 0
                     border-bottom: none
-                    transition-duration: $transition-duration
 
-                    span
+                    p, a
+                        height: 30px
                         color: $color_d
-                        display: block
-                        font-size: 16px
-                        font-weight: bold
+                        font-size: 12px
+                        color: rgba($color_d, 0.8)
+                        padding: 30px 0
+                        margin: 0 auto
+                        transition-duration: $transition-duration
+                        display: inline-block
+
+                        span
+                            color: $color_d
+                            display: block
+                            font-size: 16px
+                            font-weight: bold
 
                 a:hover
                     span
@@ -85,8 +93,14 @@ footer
                 margin-bottom: 30px
 
             article
-                width: 22%
+                width: 50%
 
+                .content
+                    margin: 0 auto
+                    width: auto
+                    margin-left: 25%
+
+            
             .socials
                 .logo
                     width: auto
@@ -113,31 +127,36 @@ footer
 
                     .icon
                         border-radius: 50%
-                        fill: $color_c
+                        fill: $color_e
                         background-color: $color_b
                         width: 10px
                         height: 10px
                         padding: 10px
                         margin-right: 5px
+
+                        &:hover
+                            fill: $color_d
+                            background-color: $color_a
+
                 
-            .posts
-                a
-                    color: $color_d
-                    margin-bottom: 25px
-                    display: block
+            // .posts
+            //     a
+            //         color: $color_d
+            //         margin-bottom: 25px
+            //         display: block
 
-                    &:hover
-                        color: $color_b
+            //         &:hover
+            //             color: $color_b
 
-                    .metadata
-                        color: rgba($color_d, 0.5)
+            //         .metadata
+            //             color: rgba($color_d, 0.5)
 
-                        svg
-                            fill: rgba($color_d, 0.5)
-                            width: 8px
-                            height: 8px
-                            margin-right: 5px
-                            margin-top: 15px
+            //             svg
+            //                 fill: rgba($color_d, 0.5)
+            //                 width: 8px
+            //                 height: 8px
+            //                 margin-right: 5px
+            //                 margin-top: 15px
  
             .pages
                 ul
@@ -153,7 +172,7 @@ footer
                             display: block
 
                             &:hover
-                                color: $color_d
+                                opacity: 0.8
             
             .suscribe
                 p
@@ -198,8 +217,34 @@ footer
                             padding: 0
                             
     .bottom
-        background-color: $color_c
+        background-color: $color_e
 
         .content
             padding: 25px 0
-            
+    
+    #go-top
+        border: none
+        width: 30px
+        height: 30px
+        border-radius: 50%
+        background-color: $color_a
+        opacity: 0.5
+        cursor: pointer
+        position: fixed
+        right: 20px
+        bottom: 20px
+        display: inline-block
+
+        &:hover
+            opacity: 1
+
+        svg
+            width: 60%
+            height: 60%
+            padding: 20%
+            transform: rotateZ(-90deg)
+            fill: $color_d
+
+        &:focus
+            outline: none
+

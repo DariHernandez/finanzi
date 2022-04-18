@@ -1,11 +1,13 @@
 html {
   margin: 0;
   padding: 0;
+  scroll-behavior: smooth;
 }
 
 body {
   margin: 0;
   padding: 0;
+  scroll-behavior: smooth;
 }
 
 .wrapper-img {
@@ -43,9 +45,16 @@ a {
   margin: 0 auto;
 }
 
+.small-width {
+  width: 800px;
+  margin: 0 auto;
+}
+
 header {
   font-family: "Open Sans", sans-serif;
   width: 100%;
+  position: sticky;
+  top: -30px;
 }
 header .top-bar {
   width: 100%;
@@ -93,6 +102,7 @@ header .top-bar .content .btn.small-cta:hover {
 }
 header .menu {
   width: 100%;
+  background-color: #fff;
 }
 header .menu .content {
   display: flex;
@@ -139,25 +149,8 @@ footer {
   font-family: "Open Sans", sans-serif;
   color: #fff;
 }
-footer .top {
-  width: 100%;
-  background-color: #009144;
-  padding: 40px 0;
-}
-footer .top .content {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-footer .top .content .btn.small-cta {
-  padding: 10px 30px;
-}
-footer .top h2 {
-  margin: 0;
-  padding: 0;
-}
 footer .middle {
-  background-color: rgba(34, 34, 34, 0.85);
+  background-color: rgba(48, 52, 58, 0.85);
   padding-top: 50px;
   padding-bottom: 80px;
 }
@@ -165,7 +158,7 @@ footer .middle .contact-cards {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-bottom: 80px;
+  padding-bottom: 50px;
 }
 footer .middle .contact-cards .card {
   display: flex;
@@ -173,9 +166,10 @@ footer .middle .contact-cards .card {
   justify-content: center;
   border-bottom: 3px solid #e1d06c;
   transition-duration: 0.5s;
+  width: 30%;
 }
 footer .middle .contact-cards .card:hover {
-  background-color: #222222;
+  background-color: #30343a;
 }
 footer .middle .contact-cards .card .icon {
   width: 30px;
@@ -185,19 +179,26 @@ footer .middle .contact-cards .card .icon {
   border: 2px solid rgba(255, 255, 255, 0.1);
   border-bottom: none;
 }
-footer .middle .contact-cards .card p, footer .middle .contact-cards .card a {
+footer .middle .contact-cards .card .text-wrapper {
+  width: calc(100% - 30px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  border-left: 0;
+  border-bottom: none;
+}
+footer .middle .contact-cards .card .text-wrapper p, footer .middle .contact-cards .card .text-wrapper a {
   height: 30px;
   color: #fff;
   font-size: 12px;
   color: rgba(255, 255, 255, 0.8);
-  padding: 30px 15px;
-  margin: 0;
-  border: 2px solid rgba(255, 255, 255, 0.1);
-  border-left: 0;
-  border-bottom: none;
+  padding: 30px 0;
+  margin: 0 auto;
   transition-duration: 0.5s;
+  display: inline-block;
 }
-footer .middle .contact-cards .card p span, footer .middle .contact-cards .card a span {
+footer .middle .contact-cards .card .text-wrapper p span, footer .middle .contact-cards .card .text-wrapper a span {
   color: #fff;
   display: block;
   font-size: 16px;
@@ -220,7 +221,12 @@ footer .middle .widgets h4 {
   margin-bottom: 30px;
 }
 footer .middle .widgets article {
-  width: 22%;
+  width: 50%;
+}
+footer .middle .widgets article .content {
+  margin: 0 auto;
+  width: auto;
+  margin-left: 25%;
 }
 footer .middle .widgets .socials .logo {
   width: auto;
@@ -245,30 +251,16 @@ footer .middle .widgets .socials .icons {
 }
 footer .middle .widgets .socials .icons .icon {
   border-radius: 50%;
-  fill: #222222;
+  fill: #30343a;
   background-color: #e1d06c;
   width: 10px;
   height: 10px;
   padding: 10px;
   margin-right: 5px;
 }
-footer .middle .widgets .posts a {
-  color: #fff;
-  margin-bottom: 25px;
-  display: block;
-}
-footer .middle .widgets .posts a:hover {
-  color: #e1d06c;
-}
-footer .middle .widgets .posts a .metadata {
-  color: rgba(255, 255, 255, 0.5);
-}
-footer .middle .widgets .posts a .metadata svg {
-  fill: rgba(255, 255, 255, 0.5);
-  width: 8px;
-  height: 8px;
-  margin-right: 5px;
-  margin-top: 15px;
+footer .middle .widgets .socials .icons .icon:hover {
+  fill: #fff;
+  background-color: #009144;
 }
 footer .middle .widgets .pages ul {
   margin: 0;
@@ -283,7 +275,7 @@ footer .middle .widgets .pages ul li a {
   display: block;
 }
 footer .middle .widgets .pages ul li a:hover {
-  color: #fff;
+  opacity: 0.8;
 }
 footer .middle .widgets .suscribe p {
   font-size: 12px;
@@ -327,10 +319,36 @@ footer .middle .widgets .suscribe form button .icon {
   padding: 0;
 }
 footer .bottom {
-  background-color: #222222;
+  background-color: #30343a;
 }
 footer .bottom .content {
   padding: 25px 0;
+}
+footer #go-top {
+  border: none;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #009144;
+  opacity: 0.5;
+  cursor: pointer;
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  display: inline-block;
+}
+footer #go-top:hover {
+  opacity: 1;
+}
+footer #go-top svg {
+  width: 60%;
+  height: 60%;
+  padding: 20%;
+  transform: rotateZ(-90deg);
+  fill: #fff;
+}
+footer #go-top:focus {
+  outline: none;
 }
 
 .btn.small-cta {
