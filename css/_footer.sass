@@ -54,30 +54,31 @@ footer
                     display: flex
                     align-items: center
                     justify-content: center
+                    flex-direction: column
                     border: 2px solid rgba($color_d, 0.1)
                     border-left: 0
                     border-bottom: none
+                    height: 90px
 
-                    p, a
-                        height: 30px
+                    span
+                        color: $color_d
+                        display: block
                         color: $color_d
                         font-size: 12px
+                        
+
+                    p, a
+                        font-size: 16px
+                        font-weight: bold
                         color: rgba($color_d, 0.8)
-                        padding: 30px 0
                         margin: 0 auto
                         transition-duration: $transition-duration
-                        display: inline-block
+                        display: block
+                        padding: 0
 
-                        span
-                            color: $color_d
-                            display: block
-                            font-size: 16px
-                            font-weight: bold
 
-                a:hover
-                    span
+                    a:hover
                         color: $color_b
-
 
         .widgets
             display: flex
@@ -248,3 +249,93 @@ footer
         &:focus
             outline: none
 
+    @media screen and (max-width: 800px)
+        .middle
+            .contact-cards
+                .card
+                    flex-direction: column
+                    align-items: flex-start
+                    border: 2px solid rgba($color_d, 0.1)
+                    border-bottom: 3px solid $color_b
+                    padding: 20px
+                    width: calc(30% - 40px)
+
+                    .icon, .text-wrapper
+                        border: none
+
+                    .icon
+                        padding: 0
+                        margin-bottom: 30px
+
+                    .text-wrapper
+                        justify-content: flex-start
+                        height: auto
+
+                        a, p, span
+                            margin: 0
+                            padding: 0
+                            text-align: left
+                            width: 100%
+
+        .bottom
+            .content
+                text-align: center
+
+    @media screen and (max-width: 680px)
+        .middle
+            .contact-cards
+                flex-direction: column
+
+                .card
+                    margin-bottom: 20px
+                    width: 90%
+                    flex-direction: row
+                    padding: 0
+
+                    .icon
+                        margin-bottom: 0
+                        padding: 30px
+                        padding-right: 0
+
+                    .text-wrapper
+                        justify-content: center
+                        height: 90px
+
+                        a, p, span
+                            text-align: center
+
+    @media screen and (max-width: 500px)
+        
+        .middle
+            padding-bottom: 20px
+
+            .widgets
+                flex-direction: column
+
+                article
+                    width: 100%
+
+                    .content
+                        display: flex
+                        align-items: center
+                        justify-content: center
+                        flex-direction: column
+                        margin: 0
+
+                        > *
+                            display: inline-block
+                        
+                        .icons
+                            margin-top: 0
+                        
+                        ul
+                            li
+                                text-align: center
+                        
+                        h4
+                            margin-bottom: 0
+                            margin-top: 30px
+
+        .bottom
+            .content
+                font-size: 10px
