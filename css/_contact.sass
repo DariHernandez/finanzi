@@ -1,0 +1,81 @@
+.contact
+
+    section
+        margin-bottom: 60px
+
+    .header-bar-wrapper
+        width: 100%
+        background-color: $color_b
+        padding: 30px 0
+
+        h1
+            font-size: 43px
+            margin: 0
+
+        p
+            font-size: 13px
+            margin-top: 5px
+            a
+                color: $color_c
+
+    .wrapper-map
+        height: 350px
+
+    .wrapper-info-form
+        display: flex
+        align-items: center
+        justify-content: center
+
+        .info, form
+            width: 50%
+
+        .info
+            h2
+                font-size: 18px
+                display: inline-block
+                background-color: $color_b
+
+            p
+                font-size: 16px
+                font-style: normal
+
+                .icon
+                    width: 15px
+                    height: 15px
+                    margin-right: 10px
+        
+        form
+            input, textarea
+                width: 100%
+                font-size: 14px
+                padding: 10px 20px
+                border-radius: 3px
+                border: none
+                margin-bottom: 10px
+                background-color: rgba($color_c, 0.05)
+                border: 1px solid rgba($color_c, 0.08)
+                transition-duration: 0.5s
+
+                &:focus
+                    outline: none
+                    border: 1px solid rgba($color_c, 0.5)
+                
+                &:hover
+                    font-size: 16px
+
+                &::placeholder 
+                    opacity: 0.6
+
+                &[type="submit"]
+                    background-color: $color_a
+                    color: $color_d
+                    padding: 10px 40px
+                    width: auto
+
+                    &:hover
+                        font-size: 14px
+                        background-color: rgba($color_a, 0.8)
+
+            textarea
+                height: 100px
+                resize: none
