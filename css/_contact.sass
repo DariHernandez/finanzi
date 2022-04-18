@@ -46,7 +46,7 @@
         
         form
             input, textarea
-                width: 100%
+                width: calc(100% - 40px)
                 font-size: 14px
                 padding: 10px 20px
                 border-radius: 3px
@@ -79,3 +79,22 @@
             textarea
                 height: 100px
                 resize: none
+    
+    @media screen and (max-width: 850px)
+        .wrapper-info-form
+            justify-content: space-evenly
+
+            .info, form
+                width: 45%
+
+    @media screen and (max-width: 600px)
+        .wrapper-info-form
+            flex-direction: column
+            justify-content: space-evenly
+
+            .info, form
+                width: 100%
+
+            .info
+                margin-bottom: 20px
+                border-bottom: 1px solid rgba($color_c, 0.08)

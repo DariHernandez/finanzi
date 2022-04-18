@@ -264,7 +264,7 @@ header .menu .content nav ul li a:hover:not(.active) {
   margin-right: 10px;
 }
 .contact .wrapper-info-form form input, .contact .wrapper-info-form form textarea {
-  width: 100%;
+  width: calc(100% - 40px);
   font-size: 14px;
   padding: 10px 20px;
   border-radius: 3px;
@@ -297,6 +297,27 @@ header .menu .content nav ul li a:hover:not(.active) {
 .contact .wrapper-info-form form textarea {
   height: 100px;
   resize: none;
+}
+@media screen and (max-width: 850px) {
+  .contact .wrapper-info-form {
+    justify-content: space-evenly;
+  }
+  .contact .wrapper-info-form .info, .contact .wrapper-info-form form {
+    width: 45%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .contact .wrapper-info-form {
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+  .contact .wrapper-info-form .info, .contact .wrapper-info-form form {
+    width: 100%;
+  }
+  .contact .wrapper-info-form .info {
+    margin-bottom: 20px;
+    border-bottom: 1px solid rgba(34, 34, 34, 0.08);
+  }
 }
 
 footer {
