@@ -28,6 +28,9 @@
         <symbol id="svg-arrow" class="svg_elem" viewBox="0 0 24 24">
             <path d="M5 3l3.057-3 11.943 12-11.943 12-3.057-3 9-9z"/>
         </symbol>
+        <symbol id="svg-menu" class="svg_elem" viewBox="0 0 24 24">
+            <path d="M24 6h-24v-4h24v4zm0 4h-24v4h24v-4zm0 8h-24v4h24v-4z"/>
+        </symbol>
     </svg>
 
     <header>
@@ -46,7 +49,7 @@
                         </svg>
                         <p>Atención L-V: 8am-8pm</p>
                     </div>
-                    <div class="link">
+                    <div class="link email">
                         <svg class="icon">
                             <use xlink:href="#svg-mail"></use>
                         </svg>
@@ -58,8 +61,17 @@
         </section>
         <section class="menu">
             <div class="content regular-width">
-                <div class="wrapper-img logo">
-                    <img src="imgs/logo.png" alt="Finanzi logo">
+
+                <div class="logo-btn-wrapper">
+                    <div class="wrapper-img logo">
+                        <img src="imgs/logo.png" alt="Finanzi logo">
+                    </div>
+    
+                    <button id="menu-btn">
+                        <svg>
+                            <use xlink:href="#svg-menu"></use>
+                        </svg>
+                    </button>
                 </div>
     
                 <nav>
@@ -87,7 +99,7 @@
 
     </main>
 
-    <footer>
+    <footer class="hide">
         <section class="middle contact">
             <div class="content small-width">
                 <section class="contact-cards">
