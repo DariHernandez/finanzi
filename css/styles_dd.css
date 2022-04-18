@@ -8,6 +8,11 @@ body {
   margin: 0;
   padding: 0;
   scroll-behavior: smooth;
+  font-family: "Open Sans", sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Poppins", sans-serif;
 }
 
 .wrapper-img {
@@ -61,7 +66,6 @@ a {
 }
 
 header {
-  font-family: "Open Sans", sans-serif;
   width: 100%;
   position: sticky;
   top: -30px;
@@ -522,4 +526,4 @@ footer #go-top:focus {
   background-color: rgba(225, 208, 108, 0.9);
 }
 
-/*# sourceMappingURL=styles.css.map */
+/*# sourceMappingURL=styles_dd.css.map */
