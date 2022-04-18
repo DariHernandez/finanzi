@@ -167,7 +167,7 @@ header .menu .content nav ul li a {
 }
 header .menu .content nav ul li a.active {
   color: #009144;
-  cursor: none;
+  cursor: default;
 }
 header .menu .content nav ul li a:hover:not(.active) {
   color: #009144;
