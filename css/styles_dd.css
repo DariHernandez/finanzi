@@ -65,6 +65,23 @@ a {
   }
 }
 
+main .header-bar-wrapper {
+  width: 100%;
+  background-color: #fbdb7f;
+  padding: 30px 0;
+}
+main .header-bar-wrapper h1 {
+  font-size: 43px;
+  margin: 0;
+}
+main .header-bar-wrapper p {
+  font-size: 13px;
+  margin-top: 5px;
+}
+main .header-bar-wrapper p a {
+  color: #222222;
+}
+
 header {
   width: 100%;
   position: sticky;
@@ -224,22 +241,6 @@ header .menu .content nav ul li a:hover:not(.active) {
 
 .contact section {
   margin-bottom: 60px;
-}
-.contact .header-bar-wrapper {
-  width: 100%;
-  background-color: #fbdb7f;
-  padding: 30px 0;
-}
-.contact .header-bar-wrapper h1 {
-  font-size: 43px;
-  margin: 0;
-}
-.contact .header-bar-wrapper p {
-  font-size: 13px;
-  margin-top: 5px;
-}
-.contact .header-bar-wrapper p a {
-  color: #222222;
 }
 .contact .wrapper-map {
   height: 350px;
@@ -627,6 +628,87 @@ footer #go-top:focus {
 }
 .btn.small-cta:hover {
   background-color: rgba(251, 219, 127, 0.9);
+}
+
+.services .content {
+  margin: 80px auto;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.services .buttons-contact {
+  width: 300px;
+}
+.services .buttons-contact .buttons button {
+  display: block;
+  width: 100%;
+  text-align: left;
+  padding: 10px 20px;
+  font-size: 15px;
+  margin-bottom: 5px;
+  border: none;
+  background: none;
+  background-color: rgba(0, 145, 68, 0.1);
+  cursor: pointer;
+}
+.services .buttons-contact .buttons button.active, .services .buttons-contact .buttons button:hover {
+  border-left: 5px solid #009144;
+}
+.services .buttons-contact .contact {
+  width: 100%;
+}
+.services .buttons-contact .contact h3 {
+  font-size: 18px;
+  color: #009144;
+  margin-top: 50px;
+}
+.services .buttons-contact .contact .text-wrapper {
+  display: flex;
+  align-items: ceter;
+  justify-content: flex-start;
+}
+.services .buttons-contact .contact .text-wrapper p {
+  font-size: 14px;
+  display: inline-block;
+  width: calc(100% - 15px);
+  margin: 0;
+  padding: 0;
+  line-height: 40px;
+}
+.services .buttons-contact .contact .text-wrapper:first-child p {
+  line-height: 20px;
+}
+.services .buttons-contact .contact .text-wrapper .icon {
+  width: 20px;
+  height: 20px;
+  padding: 10px;
+}
+.services .services-details {
+  width: calc(95% - 300px);
+}
+.services .services-details .service img {
+  width: 100%;
+  height: auto;
+}
+.services .services-details .service h2 {
+  font-size: 26px;
+}
+.services .services-details .service p, .services .services-details .service ul li {
+  font-size: 15px;
+}
+.services .services-details .service ul li {
+  list-style: none;
+  margin-bottom: 8px;
+}
+.services .services-details .service ul li:before {
+  width: 20px;
+  height: 20px;
+  content: "X";
+  background-image: url(../imgs/check.svg);
+  background-size: 20px 20px;
+  color: rgba(0, 0, 0, 0);
+  display: inline-block;
+  margin-right: 15px;
 }
 
 /*# sourceMappingURL=styles_dd.css.map */

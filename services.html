@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
     <link rel="icon" type="image/x-icon" href="/imgs/favicon.png">
-    <title>Contacto | Optima</title>
+    <title>Servicios | Optima</title>
 </head>
 <body>
     <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
@@ -35,6 +35,9 @@
         
         <symbol id="svg-location" class="svg_elem" viewBox="0 0 24 24">
             <path d="M12 0c-4.198 0-8 3.403-8 7.602 0 4.198 3.469 9.21 8 16.398 4.531-7.188 8-12.2 8-16.398 0-4.199-3.801-7.602-8-7.602zm0 11c-1.657 0-3-1.343-3-3s1.343-3 3-3 3 1.343 3 3-1.343 3-3 3z"/>
+        </symbol>
+        <symbol id="svg-check" class="svg_elem" viewBox="0 0 24 24">
+            <path d="M20.285 2l-11.285 11.567-5.286-5.011-3.714 3.716 9 8.728 15-15.285z"/>
         </symbol>
     </svg>
 
@@ -100,56 +103,179 @@
 
     </header>
 
-    <main class="contact">
+    <main class="services">
 
         <section class="header-bar-wrapper">
             <div class="header-bar regular-width">
-                <h1>Contacto</h1>
-                <p>Ver /
+                <h1>Servicios</h1>
+                <p>Ir /
                     <span>
-                        Contacto
+                        Outosourcing Contable
                     </span>
                 </p>
             </div>
         </section>
+        
+        <section class="content regular-width">
 
-        <section class="wrapper-map regular-width">
-            <iframe width="100%" height="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=300&amp;hl=en&amp;q=Calle%20Cartagena%20538%20pueblo%20libre,%20Lima,%20Per%C3%BA+(My%20Business%20Name)&amp;t=&amp;z=17&amp;ie=UTF8&amp;iwloc=B&amp;output=embed">
-            </iframe>
-        </section>
+            <section class="buttons-contact">
+                <div class="buttons">
+                    <button id="btn-service-1" class="active">Outsourcing Contable</button>
+                    <button id="btn-service-2">Outsourcing Tributario</button>
+                    <button id="btn-service-3">Outsourcing Tributario</button>
+                    <button id="btn-service-4">Outsourcing Empresarial</button>
+                    <button id="btn-service-5">Asesoría Financiera</button>
+                    <button id="btn-service-6">Optimización Empresarial</button>
+                </div>
+                <div class="contact">
+                    <h3>Información de contacto</h3>
+                    <address>
+                        <div class="text-wrapper">
 
-        <section class="wrapper-info-form regular-width">
-            <div class="info">
-                <h2>DETALLES DE CONTACTO</h2>
-                <address>
-                    <p>
-                        <svg class="icon">
-                            <use xlink:href="#svg-location"></use>
-                        </svg>
-                        Calle Cartagena 538 pueblo libre, Lima, Perú
-                    </p>
-                    <p>
-                        <svg class="icon">
-                            <use xlink:href="#svg-phone"></use>
-                        </svg>
-                        Whatsapp 981412903
-                    </p>
-                    <p>
-                        <svg class="icon">
-                            <use xlink:href="#svg-mail"></use>
-                        </svg>
-                        contacto@optimaempresas.com
-                    </p>
-                </address>
-            </div>
+                            <svg class="icon">
+                                <use xlink:href="#svg-location"></use>
+                            </svg>
+                            <p>
+                                Calle Cartagena 538 pueblo libre, 
+                                <br>
+                                Lima, Perú
+                            </p>
+                        </div>
 
-            <form action="">
-                <input type="text" name="name" id="name" placeholder="Nombre" required>
-                <input type="email" name="email" id="email" placeholder="Dirección de correo" required>
-                <input type="subject" name="subject" id="subject" placeholder="Asunto" required>
-                <textarea name="message" id="message" placeholder="Mensaje" required></textarea>
-                <input type="submit" value="CONSULTA">
-            </form>
+                        <div class="text-wrapper">
+                            <svg class="icon">
+                                <use xlink:href="#svg-phone"></use>
+                            </svg>
+                            <p>
+                                Whatsapp 981412903
+                            </p>
+                        </div>
+
+                        <div class="text-wrapper">
+                            <svg class="icon">
+                                <use xlink:href="#svg-mail"></use>
+                            </svg>
+                            <p>
+                                contacto@optimaempresas.com
+                            </p>
+                        </div>
+
+                        <div class="text-wrapper">
+                            <svg class="icon">
+                                <use xlink:href="#svg-clock"></use>
+                            </svg>
+                            <p>
+                                Atención L-V: 8am-8pm
+                            </p>
+                        </div>
+                    </address>
+                </div>
+            </section>
+
+            <section class="services-details">
+                <article id="service-1" class="service">
+                    <img src="imgs/service-1.png" alt="Servicio de Outsourcing Contablesa">
+                    <h2>Outsourcing Contable</h2>
+                    <p>
+                        Brindamos el soporte necesario para la elaboración de su contabilidad y el análisis de las operaciones de su empresa.
+                        <br>
+                        Ofrecemos servicios para pequeñas y medianas empresas para que se puedan tercerizar todos los procesos contables de la empresa, entre los servicios que se ofrecen están los siguientes:
+                    </p>
+                    <ul>
+                        <li>Registro y Análisis</li>
+                        <li>Conciliación Bancaria</li>
+                        <li>Elaboración de EE FF</li>
+                        <li>Elaboración de EE FF para Bancos</li>
+                        <li>Emisión de libros contables</li>
+                    </ul>
+                </article>
+
+                <article id="service-2" class="transparent hide service">
+                    <img src="imgs/service-2.png" alt="Servicio de Outsourcing Tributario">
+                    <h2>Outsourcing Tributario</h2>
+                    <p>
+                        Brindamos el soporte para la Gestión tributaria ante SUNAT y la consecución de beneficios para la empresa.
+                        <br>
+                        Ofrecemos servicios para pequeñas y medianas empresas para que se puedan tercerizar todos los procesos tributarios de la empresa, entre los servicios que se ofrecen están los siguientes:
+                    </p>
+                    <ul>
+                        <li>Liquidación de Impuestos</li>
+                        <li>Control de obligaciones tributarias</li>
+                        <li>Preparación de declaraciones mensuales</li>
+                        <li>Reclamaciones</li>
+                        <li>Declaración anual de impuesto a la renta</li>
+                        <li>Asesoría en fiscalización SUNAT</li>
+                    </ul>
+                </article>
+
+                <article id="service-3" class="transparent hide service">
+                    <img src="imgs/service-3.png" alt="Servicio de Outsourcing Laboral">
+                    <h2>Outsourcing Laboral</h2>
+                    <p>
+                        Externalizamos todos los procesos de Gestión Laboral.
+                        <br>
+                        Ofrecemos servicios para pequeñas y medianas empresas para que se puedan tercerizar todos los procesos tributarios de la empresa, entre los servicios que se ofrecen están los siguientes:
+                    </p>
+                    <ul>
+                        <li>Gestión de Selección</li>
+                        <li>Gestión de contratos</li>
+                        <li>Gestión de Planillas</li>
+                        <li>Declaraciones y Pagos</li>
+                        <li>Gestión de Capacitación</li>
+                    </ul>
+                </article>
+
+                <article id="service-4" class="transparent hide service">
+                    <img src="imgs/service-4.png" alt="Servicio de Outsourcing Empresarial">
+                    <h2>Outsourcing Empresarial</h2>
+                    <p>
+                        Realizamos todos  los servicios transaccionales de la empresa, para complementarla en su generación de valor.
+                        <br>
+                        Ofrecemos servicios para pequeñas y medianas empresas para que se puedan tercerizar todos los procesos transaccionales de la empresa, entre los servicios que se ofrecen están los siguientes:
+                    </p>
+                    <ul>
+                        <li>Gestión de Tesorería</li>
+                        <li>Gestión de Cobranzas</li>
+                        <li>Gestión de Compras</li>
+                        <li>Gestión de Inventarios</li>
+                        <li>Gestión de Almacenes</li>
+                    </ul>
+                </article>
+
+                <article id="service-5" class="transparent hide service">
+                    <img src="imgs/service-5.png" alt="Servicio de Asesoría Financiera">
+                    <h2>Asesoría Financiera</h2>
+                    <p>
+                        Brindamos asesoría financiera para la evaluación y ejecución de acciones de mejora de resultados.
+                        <br>
+                        Ofrecemos servicios para pequeñas y medianas empresas para que se puedan tercerizar todos los procesos estratégicos de análisis financiero, entre los servicios que se ofrecen están los siguientes:
+                    </p>
+                    <ul>
+                        <li>Informes de diagnóstico financiero</li>
+                        <li>Presupuesto Anual y proyección de resultados</li>
+                        <li>Evaluación trimestral y anual de desempeño</li>
+                        <li>Evaluación de Inversiones</li>
+                        <li>Evaluación de compra de empresas</li>
+                    </ul>
+                </article>
+
+                <article id="service-6" class="transparent hide service">
+                    <img src="imgs/service-6.png" alt="Servicio de Optimización Empresarial">
+                    <h2>Optimización Empresarial</h2>
+                    <p>
+                        Te decimos como tiene que quedar tu organización para que el outsourcing funcione de forma Optima.
+                        <br>
+                        Ofrecemos servicios para pequeñas y medianas empresas para el diseño, rediseño de procesos organizacionales para la mejora del desempeño empresarial, entre los servicios que se ofrecen están los siguientes:
+                    </p>
+                    <ul>
+                        <li>Rediseño de Procesos</li>
+                        <li>Diseño Organizacional</li>
+                        <li>Manuales de Funciones</li>
+                        <li>Automatización de Procesos</li>
+                        <li>Desarrollo de Negocios online</li>
+                    </ul>
+                </article>
+            </section>
         </section>
 
     </main>
