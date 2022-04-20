@@ -5,87 +5,97 @@
         align-items: flex-start
         justify-content: space-between
 
-    .buttons-contact
-        width: 300px
+        .buttons-contact
+            width: 300px
 
-        .buttons
-            button
-                display: block
+            .buttons
+                button
+                    display: block
+                    width: 100%
+                    text-align: left
+                    padding: 10px 20px
+                    font-size: 15px
+                    margin-bottom: 5px
+                    border: none
+                    background: none
+                    background-color: rgba($color_a, 0.1)
+                    cursor: pointer
+                    transition-duration: 0.25s
+
+                    &.active, &:hover
+                        border-left: 5px solid $color_a
+
+            .contact
                 width: 100%
-                text-align: left
-                padding: 10px 20px
-                font-size: 15px
-                margin-bottom: 5px
-                border: none
-                background: none
-                background-color: rgba($color_a, 0.1)
-                cursor: pointer
-                transition-duration: 0.25s
 
-                &.active, &:hover
-                    border-left: 5px solid $color_a
+                h3
+                    font-size: 18px
+                    color: $color_a
+                    margin-top: 50px
 
-        .contact
-            width: 100%
+                .text-wrapper
+                    display: flex
+                    align-items: ceter
+                    justify-content: flex-start
+                        
+                    p
+                        font-size: 14px
+                        display: inline-block
+                        width: calc(100% - 15px)
+                        margin: 0
+                        padding: 0
+                        line-height: 40px
+                
+                    &:first-child p
+                        line-height: 20px
 
-            h3
-                font-size: 18px
-                color: $color_a
-                margin-top: 50px
-
-            .text-wrapper
-                display: flex
-                align-items: ceter
-                justify-content: flex-start
-                    
-                p
-                    font-size: 14px
-                    display: inline-block
-                    width: calc(100% - 15px)
-                    margin: 0
-                    padding: 0
-                    line-height: 40px
-            
-                &:first-child p
-                    line-height: 20px
-
-                .icon
-                    width: 20px
-                    height: 20px
-                    padding: 10px
-
-    .services-details
-        width: calc(95% - 300px)
-
-        .service
-            transition-duration: 0.25s
-
-            &.transparent
-                opacity: 0
-            
-
-            img
-                width: 100%
-                height: auto
-            
-            h2
-                font-size: 26px
-
-            p, ul li
-                font-size: 15px
-            
-            ul
-                li
-                    list-style: none
-                    margin-bottom: 8px
-                    
-                    &:before
+                    .icon
                         width: 20px
                         height: 20px
-                        content: "X"
-                        background-image: url(../imgs/check.svg)
-                        background-size: 20px 20px
-                        color: rgba(0,0,0,0)
-                        display: inline-block
-                        margin-right: 15px
+                        padding: 10px
+
+        .services-details
+            width: calc(95% - 300px)
+
+            .service
+                transition-duration: 0.25s
+
+                &.transparent
+                    opacity: 0
+                
+
+                img
+                    width: 100%
+                    height: auto
+                
+                h2
+                    font-size: 26px
+
+                p, ul li
+                    font-size: 15px
+                
+                ul
+                    li
+                        list-style: none
+                        margin-bottom: 8px
                         
+                        &:before
+                            width: 20px
+                            height: 20px
+                            content: "X"
+                            background-image: url(../imgs/check.svg)
+                            background-size: 20px 20px
+                            color: rgba(0,0,0,0)
+                            display: inline-block
+                            margin-right: 15px
+                            
+
+    @media screen and (max-width: 700px)
+        .content
+            flex-direction: column
+
+            .buttons-contact, .services-details
+                width: 100%
+
+            .services-details
+                margin-top: 50px

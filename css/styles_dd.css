@@ -636,10 +636,10 @@ footer #go-top:focus {
   align-items: flex-start;
   justify-content: space-between;
 }
-.services .buttons-contact {
+.services .content .buttons-contact {
   width: 300px;
 }
-.services .buttons-contact .buttons button {
+.services .content .buttons-contact .buttons button {
   display: block;
   width: 100%;
   text-align: left;
@@ -652,23 +652,23 @@ footer #go-top:focus {
   cursor: pointer;
   transition-duration: 0.25s;
 }
-.services .buttons-contact .buttons button.active, .services .buttons-contact .buttons button:hover {
+.services .content .buttons-contact .buttons button.active, .services .content .buttons-contact .buttons button:hover {
   border-left: 5px solid #009144;
 }
-.services .buttons-contact .contact {
+.services .content .buttons-contact .contact {
   width: 100%;
 }
-.services .buttons-contact .contact h3 {
+.services .content .buttons-contact .contact h3 {
   font-size: 18px;
   color: #009144;
   margin-top: 50px;
 }
-.services .buttons-contact .contact .text-wrapper {
+.services .content .buttons-contact .contact .text-wrapper {
   display: flex;
   align-items: ceter;
   justify-content: flex-start;
 }
-.services .buttons-contact .contact .text-wrapper p {
+.services .content .buttons-contact .contact .text-wrapper p {
   font-size: 14px;
   display: inline-block;
   width: calc(100% - 15px);
@@ -676,38 +676,38 @@ footer #go-top:focus {
   padding: 0;
   line-height: 40px;
 }
-.services .buttons-contact .contact .text-wrapper:first-child p {
+.services .content .buttons-contact .contact .text-wrapper:first-child p {
   line-height: 20px;
 }
-.services .buttons-contact .contact .text-wrapper .icon {
+.services .content .buttons-contact .contact .text-wrapper .icon {
   width: 20px;
   height: 20px;
   padding: 10px;
 }
-.services .services-details {
+.services .content .services-details {
   width: calc(95% - 300px);
 }
-.services .services-details .service {
+.services .content .services-details .service {
   transition-duration: 0.25s;
 }
-.services .services-details .service.transparent {
+.services .content .services-details .service.transparent {
   opacity: 0;
 }
-.services .services-details .service img {
+.services .content .services-details .service img {
   width: 100%;
   height: auto;
 }
-.services .services-details .service h2 {
+.services .content .services-details .service h2 {
   font-size: 26px;
 }
-.services .services-details .service p, .services .services-details .service ul li {
+.services .content .services-details .service p, .services .content .services-details .service ul li {
   font-size: 15px;
 }
-.services .services-details .service ul li {
+.services .content .services-details .service ul li {
   list-style: none;
   margin-bottom: 8px;
 }
-.services .services-details .service ul li:before {
+.services .content .services-details .service ul li:before {
   width: 20px;
   height: 20px;
   content: "X";
@@ -716,6 +716,17 @@ footer #go-top:focus {
   color: rgba(0, 0, 0, 0);
   display: inline-block;
   margin-right: 15px;
+}
+@media screen and (max-width: 700px) {
+  .services .content {
+    flex-direction: column;
+  }
+  .services .content .buttons-contact, .services .content .services-details {
+    width: 100%;
+  }
+  .services .content .services-details {
+    margin-top: 50px;
+  }
 }
 
 /*# sourceMappingURL=styles_dd.css.map */
