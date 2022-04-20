@@ -20,6 +20,7 @@
                 background: none
                 background-color: rgba($color_a, 0.1)
                 cursor: pointer
+                transition-duration: 0.25s
 
                 &.active, &:hover
                     border-left: 5px solid $color_a
@@ -57,6 +58,12 @@
         width: calc(95% - 300px)
 
         .service
+            transition-duration: 0.25s
+
+            &.transparent
+                opacity: 0
+            
+
             img
                 width: 100%
                 height: auto

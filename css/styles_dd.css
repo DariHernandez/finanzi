@@ -650,6 +650,7 @@ footer #go-top:focus {
   background: none;
   background-color: rgba(0, 145, 68, 0.1);
   cursor: pointer;
+  transition-duration: 0.25s;
 }
 .services .buttons-contact .buttons button.active, .services .buttons-contact .buttons button:hover {
   border-left: 5px solid #009144;
@@ -685,6 +686,12 @@ footer #go-top:focus {
 }
 .services .services-details {
   width: calc(95% - 300px);
+}
+.services .services-details .service {
+  transition-duration: 0.25s;
+}
+.services .services-details .service.transparent {
+  opacity: 0;
 }
 .services .services-details .service img {
   width: 100%;
