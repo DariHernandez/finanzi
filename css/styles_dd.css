@@ -503,6 +503,9 @@ footer .bottom {
 footer .bottom .content {
   padding: 25px 0;
 }
+footer .bottom .content a {
+  color: #fff;
+}
 footer #go-top {
   border: none;
   width: 30px;
