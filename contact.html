@@ -143,12 +143,19 @@
                 </address>
             </div>
 
-            <form action="">
+            <form action="http://darideveloper.pythonanywhere.com/" method="post">
                 <input type="text" name="name" id="name" placeholder="Nombre" required>
                 <input type="email" name="email" id="email" placeholder="Dirección de correo" required>
                 <input type="subject" name="subject" id="subject" placeholder="Asunto" required>
                 <textarea name="message" id="message" placeholder="Mensaje" required></textarea>
                 <input type="submit" value="CONSULTA">
+
+                <div style="display: none">
+                    <input type="text" name="api_key" id="api_key", value="eafd0892bfb2e56be1bed603722a4349">
+                    <input type="text" name="user" id="user", value="optima">
+                    <input type="text" name="subject" id="subject", value="Nuevo contacto en tu página web!">
+                    <input type="text" name="redirect" id="redirect", value="https://darihernandez.github.io/finanzi/">
+                </div>
             </form>
         </section>
 

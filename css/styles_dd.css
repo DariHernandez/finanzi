@@ -675,6 +675,7 @@ footer #go-top:focus {
   margin: 0;
   padding: 0;
   line-height: 40px;
+  font-style: normal;
 }
 .services .content .buttons-contact .contact .text-wrapper:first-child p {
   line-height: 20px;
