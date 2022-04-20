@@ -1,0 +1,116 @@
+:root {
+    --main-bg-color: #038C3E;
+    --color: #F2D479;
+    --color-grey: #ececec;
+}
+
+.nosotros{
+    background: rgba(242, 212, 121, 0.8);
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+    display:inline;
+    padding: 5px;
+}
+
+.titulo{
+    font-size: 53px;
+    font-family: 'Poppins', sans-serif;
+    display:inline;
+    line-height: 53px;
+}
+
+.contenedor{
+    margin-top: 40%;
+    display: flex;
+    margin: 0 auto;
+    width: 85%;
+    max-width: 1300px;
+}
+
+.izquierda{
+    width: 50%;
+    padding-right: 5%;
+}
+
+.derecha{
+    width: 50%;
+    box-sizing: border-box;
+}
+
+.main-image{
+    border-radius: 10px;
+    width: 100%;
+}
+
+.servicios{
+    background-color: white;
+    padding: 100px;
+    text-align: center;
+}
+
+.contenedor-servicios{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.servicio{
+    display: flex;
+    text-align: left;
+    width: 380px;
+    box-sizing: border-box;
+}
+
+.estilo-icono{
+    width: 50px;
+    height: 50px;
+    margin-top: 55px;
+    background-color: var(--main-bg-color);
+    text-align: center;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+svg {
+    fill: white;
+    width: 40px;
+    height: 40px;
+}
+
+.servicio:hover svg{
+    fill: black;
+} 
+
+.servicio:hover .estilo-icono{
+    background-color: var(--color);
+}
+
+.texto-servicio{
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.titulo-servicio{
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+}
+
+.rayita{
+    width: 30px;
+    height: 3px;
+    background-color: var(--main-bg-color);
+}
+
+@media (max-width: 800px){
+    .contenedor{
+        flex-direction: column;
+    }
+    .izquierda{
+        width: 100%;
+    }
+    .derecha{
+        width: 100%;
+    }
+}

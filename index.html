@@ -1,19 +1,50 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilos_NB.css">
+    <link rel="stylesheet" href="css/inicio.css">
     <link rel="stylesheet" href="css/styles_dd.css">
-    <link rel="icon" type="image/x-icon" href="./imgs/favicon.png">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="icon" type="image/x-icon" href="/imgs/favicon.png">
-    <title>Optima | Asesoría y Servicios Empresariales</title>
+    <script src="./JS/jquery.js"></script>
+    <link rel="icon" type="image/x-icon" href="imgs/favicon.png">
+    <title>Inicio | Optima</title>
 </head>
+
 <body>
-    <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+    <svg style="display: none;">
+        <symbol id="svg-chart" class="svg_elem" viewBox="0 0 24 24"
+            style="fill-rule:evenodd;clip-rule:evenodd; stroke-linejoin:round;stroke-miterlimit:1.41421;">
+            <path
+                d="M24 3.875l-6 1.221 1.716 1.708-5.351 5.358-3.001-3.002-7.336 7.242 1.41 1.418 5.922-5.834 2.991 2.993 6.781-6.762 1.667 1.66 1.201-6.002zm0 16.125v2h-24v-20h2v18h22z" />
+        </symbol>
+        <symbol id="svg-suitcase" class="svg_elem" viewBox="0 0 24 24"
+            style="fill-rule:evenodd;clip-rule:evenodd; stroke-linejoin:round;stroke-miterlimit:1.41421;">
+            <path
+                d="M12.23 15.5c-6.801 0-10.367-1.221-12.23-2.597v9.097h24v-8.949c-3.218 2.221-9.422 2.449-11.77 2.449zm1.77 2.532c0 1.087-.896 1.968-2 1.968s-2-.881-2-1.968v-1.032h4v1.032zm-14-8.541v-2.491h24v2.605c0 5.289-24 5.133-24-.114zm9-7.491c-1.104 0-2 .896-2 2v2h2v-1.5c0-.276.224-.5.5-.5h5c.276 0 .5.224.5.5v1.5h2v-2c0-1.104-.896-2-2-2h-6z" />
+        </symbol>
+        <symbol id="svg-people" class="svg_elem" viewBox="0 0 24 24"
+            style="fill-rule:evenodd;clip-rule:evenodd; stroke-linejoin:round;stroke-miterlimit:1.41421;">
+            <path
+                d="M17.997 18h-11.995l-.002-.623c0-1.259.1-1.986 1.588-2.33 1.684-.389 3.344-.736 2.545-2.209-2.366-4.363-.674-6.838 1.866-6.838 2.491 0 4.226 2.383 1.866 6.839-.775 1.464.826 1.812 2.545 2.209 1.49.344 1.589 1.072 1.589 2.333l-.002.619zm4.811-2.214c-1.29-.298-2.49-.559-1.909-1.657 1.769-3.342.469-5.129-1.4-5.129-1.265 0-2.248.817-2.248 2.324 0 3.903 2.268 1.77 2.246 6.676h4.501l.002-.463c0-.946-.074-1.493-1.192-1.751zm-22.806 2.214h4.501c-.021-4.906 2.246-2.772 2.246-6.676 0-1.507-.983-2.324-2.248-2.324-1.869 0-3.169 1.787-1.399 5.129.581 1.099-.619 1.359-1.909 1.657-1.119.258-1.193.805-1.193 1.751l.002.463z" />
+        </symbol>
+        <symbol id="svg-dialogue" class="svg_elem" viewBox="0 0 24 24"
+            style="fill-rule:evenodd;clip-rule:evenodd; stroke-linejoin:round;stroke-miterlimit:1.41421;">
+            <path
+                d="M17.454 12.537c2.782 0 5.046 1.779 5.046 3.967 0 1.12-.462 1.745-1.102 2.509-.021.746-.049 1.054.139 1.866-.891-.306-.986-.396-1.666-.813-.894.218-1.489.38-2.465.38-3.087 0-4.998-2.046-4.998-3.942 0-2.188 2.264-3.967 5.046-3.967zm0-1.5c-3.436 0-6.546 2.292-6.546 5.467 0 2.799 2.633 5.442 6.498 5.442.699 0 1.44-.087 2.213-.275.914.561 2.933 1.128 4.352 1.385-.53-1.044-1.117-2.479-1.088-3.479.714-.853 1.117-1.953 1.117-3.073 0-3.158-3.089-5.467-6.546-5.467zm-8.485 4.614c-1.138-.11-1.611-.247-2.611-.491-.97.596-1.26.815-3.008 1.374.418-1.514.364-2.183.333-3.183-.834-1-1.683-2.07-1.683-3.943 0-3.502 3.589-6.352 8-6.352 4.264 0 7.748 2.664 7.978 6.004.698.038 1.377.14 2.021.315-.022-4.834-4.762-8.319-9.999-8.319-5.281 0-10 3.527-10 8.352 0 1.71.615 3.391 1.705 4.695.047 1.527-.851 3.718-1.661 5.313 2.168-.391 5.252-1.258 6.649-2.115.802.196 1.578.314 2.33.374-.135-.749-.148-1.317-.054-2.024z" />
+        </symbol>
+        <symbol id="svg-cake-chart" class="svg_elem" viewBox="0 0 24 24"
+            style="fill-rule:evenodd;clip-rule:evenodd; stroke-linejoin:round;stroke-miterlimit:1.41421;">
+            <path
+                d="M13 12.414v-12.364c6.158.51 11 5.66 11 11.95 0 6.627-5.373 12-12 12-2.953 0-5.654-1.072-7.744-2.842l8.744-8.744zm-2-12.364c-6.158.51-11 5.66-11 11.95 0 2.954 1.072 5.654 2.842 7.745l1.42-1.42c-1.412-1.725-2.262-3.928-2.262-6.325 0-5.177 3.953-9.446 9-9.949v-2.001z" />
+        </symbol>
+        <symbol id="svg-computer" class="svg_elem" viewBox="0 0 24 24"
+            style="fill-rule:evenodd;clip-rule:evenodd; stroke-linejoin:round;stroke-miterlimit:1.41421;">
+            <path d="M0 0v18h24v-18h-24zm22 16h-20v-14h20v14zm-3 6v2h-14v-2h4v-2h6v2h4z" />
+        </symbol>
+
         <symbol id="svg-phone" class="svg_elem" viewBox="0 0 24 24">
             <path d="M20 22.621l-3.521-6.795c-.008.004-1.974.97-2.064 1.011-2.24 1.086-6.799-7.82-4.609-8.994l2.083-1.026-3.493-6.817-2.106 1.039c-7.202 3.755 4.233 25.982 11.6 22.615.121-.055 2.102-1.029 2.11-1.033z"/>
         </symbol>
@@ -78,7 +109,7 @@
                 <nav>
                     <ul>
                         <li>
-                            <a href="" class="active">Home</a>
+                            <a href="">Home</a>
                         </li>
                         <li>
                             <a href="./about_us.html">Nosotros</a>
@@ -87,17 +118,244 @@
                             <a href="./services.html">Servicios</a>
                         </li>
                         <li>
-                            <a href="./contact.html">Contacto</a>
+                            <a href="./contact.html" class="active">Contacto</a>
                         </li>
                     </ul>
                 </nav>
             </div>
         </section>
-
     </header>
 
-    <main style="height: 1000px;">
-
+    <main class="inicio">
+        <div id="c-slider">
+            <div id="slider">
+                <section class="diapositiva">
+                    <div class="centrado">
+                        <h1 class="underlined_green">Escoge tus mejores opciones financieras</h1>
+                        <!-- <p class="underlined_yellow">Ipsum dolor sit amet consectetur adipisicing</p> -->
+                    </div>
+                    <img src="./img/image1.png" alt="">
+                </section>
+                <section class="diapositiva">
+                    <div class="centrado">
+                        <h1 class="underlined_green">Gestiona tus resultados esperados</h1>
+                        <!-- <p class="underlined_yellow">remipsum dolor sit amet consectetur adipisicing</p> -->
+                    </div>
+                    <img src="./img/image2.png" alt="">
+                </section>
+                <section class="diapositiva">
+                    <div class="centrado">
+                        <h1 class="underlined_green">Te ayudamos a crecer</h1>
+                        <!-- <p class="underlined_yellow">orem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod</p> -->
+                    </div>
+                    <img src="./img/image3.png" alt="">
+                </section>
+            </div>
+            <div id="btn-prev">&#60;</div>
+            <div id="btn-next">&#62;</div>
+            <script src="./JS/slider.js"></script>
+        </div>
+        <section class="cajas">
+            <section class="caja primero" onmouseover="arriba_primero()" onmouseout="abajo_primero()">
+                <aside class="acomodo_izquierda">
+                    <p><strong>OUTSOURCING CONTABLE</strong></p>
+                    <p>Somos tu mejor aliado para la gestión contable y tributaria de tu empresa</p>
+                </aside>
+                <aside class="acomodo_derecha">
+                    <div class="next">&#62;</div>
+                </aside>
+            </section>
+            <section class="caja bordes_lado_izquierdo bordes_lado_derecho segundo" onmouseover="arriba_segundo()"
+                onmouseout="abajo_segundo()">
+                <aside class="acomodo_izquierda">
+                    <p><strong>OUTSOURCING ADMINISTRATIVO</strong></p>
+                    <p>Terceriza las funciones que no te agregan valor y enfócate en tu negocio</p>
+                </aside>
+                <aside class="acomodo_derecha">
+                    <div class="next">&#62;</div>
+                </aside>
+            </section>
+            <section class="caja bordes_lado_derecho tercero" onmouseover="arriba_tercero()"
+                onmouseout="abajo_tercero()">
+                <aside class="acomodo_izquierda">
+                    <p><strong>SERVICIO DE OPTIMIZACIÓN</strong></p>
+                    <p>Te ayudamos en la organización y la mejora de tus procesos de gestión</p>
+                </aside>
+                <aside class="acomodo_derecha">
+                    <div class="next">&#62;</div>
+                </aside>
+            </section>
+        </section>
+        <br>
+        <br>
+        <section class="contenedor">
+            <aside class="izquierda">
+                <h2 class="nosotros">Nosotros</h2>
+                <br>
+                <br>
+                <h3 class="titulo">Trabajamos para lograr los mejores resultados</h3>
+                <br>
+                <br>
+                <p>Nosostros nos alineamos con los objetivos de nuestros clientes, ayudandolos a lograr sus objetivos y
+                    brindandoles servicios profesionales de calidad para el manejo de sus finanzas y su administración
+                </p>
+            </aside>
+            <aside class="derecha">
+                <img class="main-image" src="./img/image4.png" alt="">
+            </aside>
+        </section>
+        <section class="servicios">
+            <h2 class="nosotros">Servicios</h2>
+            <p class="separador">Las empresas necesitan enfocarse en sus actividades principales y por ello OPTIMA
+                ofrece sus Servicios Especializados de Outsourcing Empresarial externalizando todos los procesos de
+                soporte con un un grupo de técnicos y profesionales destacados con amplia experiencia y conocimiento.
+            </p>
+            <section class="contenedor-servicios">
+                <section class="servicio" onmouseover="arriba_1()" onmouseout="abajo_1()">
+                    <aside class="icono">
+                        <p class="estilo-icono caja_1">
+                            <svg>
+                                <use xlink:href="#svg-chart"></use>
+                            </svg>
+                        </p>
+                    </aside>
+                    <aside class="texto-servicio">
+                        <h3 class="titulo-servicio">Outsourcing Contable</h3>
+                        <div class="rayita"></div>
+                        <p>Brindamos el soporte necesario para la elaboración de su contabilidad y el análisis de las
+                            operaciones de su empresa</p>
+                        <span class="linea" onmouseover="derecha_1()" onmouseout="izquierda_1()"><a href="#">read
+                                more</a>
+                            <p class="next_color_1">></p>
+                        </span>
+                    </aside>
+                </section>
+                <section class="servicio" onmouseover="arriba_2()" onmouseout="abajo_2()">
+                    <aside class="icono">
+                        <p class="estilo-icono caja_2">
+                            <svg>
+                                <use xlink:href="#svg-suitcase"></use>
+                            </svg>
+                        </p>
+                    </aside>
+                    <aside class="texto-servicio">
+                        <h3 class="titulo-servicio">Outsourcing Tributario</h3>
+                        <div class="rayita"></div>
+                        <p>Brindamos el soporte para la Gestión tributaria ante SUNAT y la consecución de beneficios
+                            para la empresa</p>
+                        <span class="linea" onmouseover="derecha_2()" onmouseout="izquierda_2()"><a href="#">read
+                                more</a>
+                            <p class="next_color_2">></p>
+                        </span>
+                    </aside>
+                </section>
+                <section class="servicio" onmouseover="arriba_3()" onmouseout="abajo_3()">
+                    <aside class="icono">
+                        <p class="estilo-icono caja_3">
+                            <svg>
+                                <use xlink:href="#svg-people"></use>
+                            </svg>
+                        </p>
+                    </aside>
+                    <aside class="texto-servicio">
+                        <h3 class="titulo-servicio">Outsourcing Laboral</h3>
+                        <div class="rayita"></div>
+                        <p>Externalizamos todos los procesos de Gestión Laboral</p>
+                        <span class="linea" onmouseover="derecha_3()" onmouseout="izquierda_3()"><a href="#">read
+                                more</a>
+                            <p class="next_color_3">></p>
+                        </span>
+                    </aside>
+                </section>
+                <section class="servicio" onmouseover="arriba_4()" onmouseout="abajo_4()">
+                    <aside class="icono">
+                        <p class="estilo-icono caja_4">
+                            <svg>
+                                <use xlink:href="#svg-dialogue"></use>
+                            </svg>
+                        </p>
+                    </aside>
+                    <aside class="texto-servicio">
+                        <h3 class="titulo-servicio">Outsourcing Emprearial</h3>
+                        <div class="rayita"></div>
+                        <p>Realizamos todos los servicios transaccionales de la empresa, para complementarla en su
+                            generación de valor</p>
+                        <span class="linea" onmouseover="derecha_4()" onmouseout="izquierda_4()"><a href="#">read
+                                more</a>
+                            <p class="next_color_4">></p>
+                        </span>
+                    </aside>
+                </section>
+                <section class="servicio" onmouseover="arriba_5()" onmouseout="abajo_5()">
+                    <aside class="icono">
+                        <p class="estilo-icono caja_5">
+                            <svg>
+                                <use xlink:href="#svg-cake-chart"></use>
+                            </svg>
+                        </p>
+                    </aside>
+                    <aside class="texto-servicio">
+                        <h3 class="titulo-servicio">Asesoría Financiera</h3>
+                        <div class="rayita"></div>
+                        <p>Brindamos asesoría financiera para la evaluación y ejecución de acciones de mejora de
+                            resultados</p>
+                        <span class="linea" onmouseover="derecha_5()" onmouseout="izquierda_5()"><a href="#">read
+                                more</a>
+                            <p class="next_color_5">></p>
+                        </span>
+                    </aside>
+                </section>
+                <section class="servicio" onmouseover="arriba_6()" onmouseout="abajo_6()">
+                    <aside class="icono">
+                        <p class="estilo-icono caja_6">
+                            <svg>
+                                <use xlink:href="#svg-computer"></use>
+                            </svg>
+                        </p>
+                    </aside>
+                    <aside class="texto-servicio">
+                        <h3 class="titulo-servicio">Servicios de Optimización</h3>
+                        <div class="rayita"></div>
+                        <p>Te decimos como tiene que quedar tu organización para que el outsourcing funcione de forma
+                            Optima</p>
+                        <span class="linea" onmouseover="derecha_6()" onmouseout="izquierda_6()"><a href="#">read
+                                more</a>
+                            <p class="next_color_6">></p>
+                        </span>
+                    </aside>
+                </section>
+            </section>
+        </section>
+        <section class="imagen">
+            <div class="sobrepuesto">
+                <h2 class="nosotros">Contacto</h2>
+                <br>
+                <br>
+                <h3 class="titulo letra">Escríbenos y nos pondremos </h3>
+                <br>    
+                <p class="titulo letra">en contacto</p>
+                <br>
+                <br>
+                <br>
+                <form class="formulario">
+                    <input type="text" id="nombre" name="nombre" placeholder="Nombre" required>
+                    <input type="email" id="mail" name="mail" placeholder="E-mail" required>
+                    <input type="number" id="telefono" name="telefono" placeholder="Telefono" required>
+                    <input type="text" id="asunto" name="asunto" placeholder="Asunto" required>
+                    <textarea name="mensaje" id="mensaje" cols="100" rows="8" placeholder="Mensaje" required></textarea>
+                    <input type="submit" id="submit" value="SUBMIT MESSAGE">
+                </form>
+            </div>
+            <img class="flotante" src="./img/image5.png" alt="">
+        </section>
+        <section class="galeria">
+            <img class="marca" src="./img/marca1.png" alt="">
+            <img class="marca" src="./img/marca2.png" alt="">
+            <img class="marca" src="./img/marca3.png" alt="">
+            <img class="marca" src="./img/marca4.png" alt="">
+            <img class="marca" src="./img/marca5.png" alt="">
+            <img class="marca" src="./img/marca6.png" alt="">
+        </section>
     </main>
 
     <footer class="">
@@ -222,5 +480,8 @@
 
     <script type="text/javascript" src="code/header.js"></script>
     <script type="text/javascript" src="code/footer.js"></script>
+    <script src="JS/anime.min.js"></script>
+    <script src="JS/operaciones.js"></script>
 </body>
+
 </html>
