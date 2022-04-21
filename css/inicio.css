@@ -62,14 +62,16 @@ body{
     overflow:hidden;
 }
 
+/* Cambios de dari inicio */
 .inicio #slider{
     display: flex;
-    width: 300%;
+    width: 300vw;
 }
 
 .inicio #slider section{
-    width: 100%;
+    width: 100vw;
 }
+/* Cambios de dari final */
 
 .inicio #slider img{
     display:block;

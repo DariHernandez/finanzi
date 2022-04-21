@@ -6,10 +6,6 @@ var current_article = 1
 var buttons = []
 var articles = []
 
-function sleep(s) {
-    return new Promise(resolve => setTimeout(resolve, s*1000));
-}
-
 // Get all buttons
 for (let num = 0; num<=6; num++) {
     
