@@ -65,11 +65,11 @@ body{
 
 .inicio #slider{
     display: flex;
-    width: 300%;
+    width: 300vw;
 }
 
 .inicio #slider section{
-    width: 100%;
+    width: 100vw;
 }
 
 .inicio #slider img{
