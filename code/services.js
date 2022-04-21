@@ -22,6 +22,18 @@ for (let num = 0; num<=6; num++) {
     articles.push (article)
 }
 
+// Get article id in url
+async function article_by_url () {
+    url = String(window.location.href)
+    if (url.includes("#")) {
+        current_article = url.charAt(url.length - 1)
+    
+        // Artivate specific article
+        await show_articles (current_article)
+    }
+}
+article_by_url ()
+
 // Detect buttons clicks
 buttons_wrapper.addEventListener ("click", async function (event) {
 
@@ -42,6 +54,13 @@ buttons_wrapper.addEventListener ("click", async function (event) {
         return null
     }
 
+    await show_articles (num)
+
+   
+})
+
+async function show_articles (num) {
+
     // Get and deactivate other buttons
     for (let button of buttons) {
         if (button) {
@@ -50,6 +69,8 @@ buttons_wrapper.addEventListener ("click", async function (event) {
     }
 
     // Activate new button
+    let selector_button = "#btn-service-" + num
+    let target_button = document.querySelector (selector_button)
     target_button.classList.add ("active")
     
     // Loop for each article
@@ -79,4 +100,4 @@ buttons_wrapper.addEventListener ("click", async function (event) {
 
     // Update current article counter
     current_article = num
-})
+}
