@@ -42,7 +42,7 @@ p.small {
 
 a {
   text-decoration: none;
-  color: #1B76D0;
+  color: #0f4bb1;
 }
 
 .regular-width {
@@ -67,7 +67,7 @@ a {
 
 main .header-bar-wrapper {
   width: 100%;
-  background-color: #fbdb7f;
+  background-color: #2fc2e8;
   padding: 30px 0;
 }
 main .header-bar-wrapper h1 {
@@ -93,7 +93,7 @@ header.sticky {
 }
 header .top-bar {
   width: 100%;
-  background-color: #1B76D0;
+  background-color: #0f4bb1;
 }
 header .top-bar .content {
   display: flex;
@@ -117,7 +117,7 @@ header .top-bar .content .links .link .icon {
   width: 10px;
   margin-right: 5px;
   display: inline-block;
-  fill: #fbdb7f;
+  fill: #2fc2e8;
 }
 header .top-bar .content .links .link a, header .top-bar .content .links .link p {
   display: inline-block;
@@ -125,7 +125,7 @@ header .top-bar .content .links .link a, header .top-bar .content .links .link p
   color: #fff;
 }
 header .top-bar .content .links .link a:hover {
-  color: #fbdb7f;
+  color: #2fc2e8;
 }
 header .top-bar .content .btn.small-cta {
   height: 100%;
@@ -133,7 +133,7 @@ header .top-bar .content .btn.small-cta {
   line-height: 30px;
 }
 header .top-bar .content .btn.small-cta:hover {
-  background-color: rgba(251, 219, 127, 0.9);
+  background-color: rgba(47, 194, 232, 0.9);
 }
 header .menu {
   width: 100%;
@@ -188,11 +188,11 @@ header .menu .content nav ul li a {
   line-height: 40px;
 }
 header .menu .content nav ul li a.active {
-  color: #1B76D0;
+  color: #0f4bb1;
   cursor: default;
 }
 header .menu .content nav ul li a:hover:not(.active) {
-  color: #1B76D0;
+  color: #0f4bb1;
   font-size: 14px;
 }
 @media screen and (max-width: 768px) {
@@ -258,7 +258,7 @@ header .menu .content nav ul li a:hover:not(.active) {
 .contact .wrapper-info-form .info h2 {
   font-size: 18px;
   display: inline-block;
-  background-color: #fbdb7f;
+  background-color: #2fc2e8;
 }
 .contact .wrapper-info-form .info p {
   font-size: 16px;
@@ -291,14 +291,14 @@ header .menu .content nav ul li a:hover:not(.active) {
   opacity: 0.6;
 }
 .contact .wrapper-info-form form input[type=submit], .contact .wrapper-info-form form textarea[type=submit] {
-  background-color: #1B76D0;
+  background-color: #0f4bb1;
   color: #fff;
   padding: 10px 40px;
   width: auto;
 }
 .contact .wrapper-info-form form input[type=submit]:hover, .contact .wrapper-info-form form textarea[type=submit]:hover {
   font-size: 14px;
-  background-color: rgba(27, 118, 208, 0.8);
+  background-color: rgba(15, 75, 177, 0.8);
 }
 .contact .wrapper-info-form form textarea {
   height: 100px;
@@ -344,7 +344,7 @@ footer .middle .contact-cards .card {
   display: flex;
   align-items: center;
   justify-content: center;
-  border-bottom: 3px solid #fbdb7f;
+  border-bottom: 3px solid #2fc2e8;
   transition-duration: 0.5s;
   width: 30%;
 }
@@ -354,7 +354,7 @@ footer .middle .contact-cards .card:hover {
 footer .middle .contact-cards .card .icon {
   width: 30px;
   height: 30px;
-  fill: #fbdb7f;
+  fill: #2fc2e8;
   padding: 30px;
   border: 2px solid rgba(255, 255, 255, 0.1);
   border-bottom: none;
@@ -386,7 +386,7 @@ footer .middle .contact-cards .card .text-wrapper p, footer .middle .contact-car
   padding: 0;
 }
 footer .middle .contact-cards .card .text-wrapper a:hover {
-  color: #fbdb7f;
+  color: #2fc2e8;
 }
 footer .middle .widgets {
   display: flex;
@@ -433,7 +433,7 @@ footer .middle .widgets .socials .icons {
 footer .middle .widgets .socials .icons .icon {
   border-radius: 50%;
   fill: #30343a;
-  background-color: #fbdb7f;
+  background-color: #2fc2e8;
   width: 10px;
   height: 10px;
   padding: 10px;
@@ -441,7 +441,7 @@ footer .middle .widgets .socials .icons .icon {
 }
 footer .middle .widgets .socials .icons .icon:hover {
   fill: #fff;
-  background-color: #1B76D0;
+  background-color: #0f4bb1;
 }
 footer .middle .widgets .pages ul {
   margin: 0;
@@ -451,7 +451,7 @@ footer .middle .widgets .pages ul li {
   list-style: none;
 }
 footer .middle .widgets .pages ul li a {
-  color: #fbdb7f;
+  color: #2fc2e8;
   margin-bottom: 20px;
   display: block;
 }
@@ -482,14 +482,14 @@ footer .middle .widgets .suscribe form input[type=email] {
 }
 footer .middle .widgets .suscribe form input[type=email]:focus {
   outline: none;
-  border: 2px solid #1B76D0;
+  border: 2px solid #0f4bb1;
   width: calc(100% - 70px - 4px);
   height: 31px;
 }
 footer .middle .widgets .suscribe form button {
   width: 35px;
   height: 35px;
-  background-color: #1B76D0;
+  background-color: #0f4bb1;
   cursor: pointer;
 }
 footer .middle .widgets .suscribe form button .icon {
@@ -513,7 +513,7 @@ footer #go-top {
   width: 30px;
   height: 30px;
   border-radius: 50%;
-  background-color: #1B76D0;
+  background-color: #0f4bb1;
   opacity: 0.5;
   cursor: pointer;
   position: fixed;
@@ -539,7 +539,7 @@ footer #go-top:focus {
     flex-direction: column;
     align-items: flex-start;
     border: 2px solid rgba(255, 255, 255, 0.1);
-    border-bottom: 3px solid #fbdb7f;
+    border-bottom: 3px solid #2fc2e8;
     padding: 20px;
     width: calc(30% - 40px);
   }
@@ -624,7 +624,7 @@ footer #go-top:focus {
 
 .btn.small-cta {
   border: none;
-  background-color: #fbdb7f;
+  background-color: #2fc2e8;
   color: #222222;
   cursor: pointer;
   display: inline-block;
@@ -632,7 +632,7 @@ footer #go-top:focus {
   font-weight: bold;
 }
 .btn.small-cta:hover {
-  background-color: rgba(251, 219, 127, 0.9);
+  background-color: rgba(47, 194, 232, 0.9);
 }
 
 .services .content {
@@ -653,19 +653,19 @@ footer #go-top:focus {
   margin-bottom: 5px;
   border: none;
   background: none;
-  background-color: rgba(27, 118, 208, 0.1);
+  background-color: rgba(15, 75, 177, 0.1);
   cursor: pointer;
   transition-duration: 0.25s;
 }
 .services .content .buttons-contact .buttons button.active, .services .content .buttons-contact .buttons button:hover {
-  border-left: 5px solid #1B76D0;
+  border-left: 5px solid #0f4bb1;
 }
 .services .content .buttons-contact .contact {
   width: 100%;
 }
 .services .content .buttons-contact .contact h3 {
   font-size: 18px;
-  color: #1B76D0;
+  color: #0f4bb1;
   margin-top: 50px;
 }
 .services .content .buttons-contact .contact .text-wrapper {

@@ -1,11 +1,11 @@
 :root {
-    --main-bg-color: #1B76D0;
-    --color: #F2D479;
+    --main-bg-color: #0f4bb1;
+    --color: #2fc2e8;
     --color-grey: #ececec;
 }
 
 .nosotros{
-    background: rgba(242, 212, 121, 0.8);
+    background: rgba(47, 194, 232, 0.8);
     font-size: 20px;
     font-family: 'Poppins', sans-serif;
     display:inline;

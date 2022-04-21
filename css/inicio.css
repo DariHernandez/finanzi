@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
 
 :root {
-    --main-bg-color: #1B76D0;
-    --color: #F2D479;
+    --main-bg-color: #0f4bb1;
+    --color: #2fc2e8;
     --color-grey: #ececec;
 }
 
@@ -38,7 +38,7 @@ body{
     margin-bottom: 20px;
     padding-left: 10px;
     padding-right: 10px;
-    background: rgba(10, 77, 166, 0.8);
+    background: rgba(15, 75, 177, 0.8);
     font-family: 'Poppins', sans-serif;
     font-size: 3vw;
     color: white;
@@ -50,7 +50,7 @@ body{
     margin-top: 0px;
     margin-bottom: 20%;
     padding: 15px;
-    background: rgba(242, 212, 121, 0.8);
+    background: rgba(47, 194, 232, 0.8);
     font-size: 20px;
     flex: 0 1 auto;
     align-self: center;
@@ -263,7 +263,7 @@ body{
 }
 
 .inicio #submit:hover{
-    background-color: #0A4DA6;
+    background-color: #0f4bb1;
     cursor: pointer;
 }
 

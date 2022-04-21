@@ -10,7 +10,7 @@ body{
 
 .about .header-bar-wrapper{
     width: 85%;
-    background-color: #F2D479;
+    background-color: #2fc2e8;
     padding: 50px 7.5%;
 }
 .about .header-bar-wrapper h1 {
@@ -24,7 +24,7 @@ body{
 }
 
 .about .header-bar-wrapper a{
-    color: #1B76D0;
+    color: #0f4bb1;
 }
 
 .about .servicio{
@@ -59,7 +59,7 @@ body{
 }
 
 .about .list-style{
-    color:#1B76D0;
+    color:#0f4bb1;
     margin-right: 20px;
 }
 
