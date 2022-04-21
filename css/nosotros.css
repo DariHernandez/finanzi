@@ -62,3 +62,12 @@ body{
     color:#038C3E;
     margin-right: 20px;
 }
+
+@media (max-width: 800px){
+    .about .right{
+        width: 100%;
+    }
+    .about .left{
+        width: 100%;
+    }
+}

@@ -11,12 +11,12 @@ var image_counter =  1
 
 async function auto_slide () {
     // Auto slite to right, each 5 seconds
+    await sleep (5)
 
     while (is_auto_slide) {
-        console.log ("scrolling auto")
-        await sleep (5)
         go_next_image ()
         console.log (image_counter)
+        await sleep (5)
     }
 }
 auto_slide ()

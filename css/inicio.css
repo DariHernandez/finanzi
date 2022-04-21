@@ -18,6 +18,8 @@ body{
 
 .inicio .diapositiva{
     position: relative;
+    height: 100%;
+    overflow: hidden;
 }
 
 .inicio .centrado{
@@ -57,21 +59,18 @@ body{
 .inicio #c-slider{
     margin:auto;
     width: 100%;
-    height: 100vh;
     position: relative;
     overflow:hidden;
 }
 
-/* Cambios de dari inicio */
 .inicio #slider{
     display: flex;
-    width: 300vw;
+    width: 300%;
 }
 
 .inicio #slider section{
-    width: 100vw;
+    width: 100%;
 }
-/* Cambios de dari final */
 
 .inicio #slider img{
     display:block;
@@ -136,7 +135,7 @@ body{
 
 .inicio .caja{
     background-color: white;
-    width: 380px;
+    width: 432px;
     height: 180px;
     display: flex;
     text-align: center;
@@ -176,13 +175,13 @@ body{
 
 .inicio .servicios{
     margin-top: 20px;
-    margin: 20px auto;
-    margin-bottom: 0px;
     max-width: 1300px;
 }
 
 .inicio .separador{
     margin-top: 35px;
+    width: 100%;
+    max-width: 1300px;
 }
 
 .inicio a{
@@ -234,6 +233,7 @@ body{
     height: 340px;
     align-items: center;
     justify-content: space-between;
+    margin-bottom: 30px;
 }
 
 .inicio #nombre, #mail, #telefono, #asunto{
@@ -270,16 +270,22 @@ body{
 .inicio .imagen{
     position: relative;
     overflow: hidden;
-    height: 670px;
+    height: 700px;
     width: 100%;
 }
 
-.inicio .galeria{
+.inicio .fondo{
+    width: 100%;
     background-color: white;
+}
+
+.inicio .galeria{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-around;
+    margin: 0 auto;
+    max-width: 1300px;
 }
 
 .inicio .marca{
@@ -313,5 +319,14 @@ body{
         height: 100%;
         width: auto;
         left: 0;
+    }
+    .inicio .sobrepuesto{
+        width: 90%;
+    }
+    .inicio .marca{
+        width: 100%;
+    }
+    .inicio #c-slider{
+        height: 50vh;
     }
 }
