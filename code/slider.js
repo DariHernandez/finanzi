@@ -15,7 +15,6 @@ async function auto_slide () {
 
     while (is_auto_slide) {
         go_next_image ()
-        console.log (image_counter)
         await sleep (5)
     }
 }
