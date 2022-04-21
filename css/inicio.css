@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
 
 :root {
-    --main-bg-color: #038C3E;
+    --main-bg-color: #1B76D0;
     --color: #F2D479;
     --color-grey: #ececec;
 }
@@ -38,7 +38,7 @@ body{
     margin-bottom: 20px;
     padding-left: 10px;
     padding-right: 10px;
-    background: rgba(3, 140, 62, 0.8);
+    background: rgba(10, 77, 166, 0.8);
     font-family: 'Poppins', sans-serif;
     font-size: 3vw;
     color: white;
@@ -263,7 +263,7 @@ body{
 }
 
 .inicio #submit:hover{
-    background-color: #074622;
+    background-color: #0A4DA6;
     cursor: pointer;
 }
 
