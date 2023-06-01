@@ -55,18 +55,18 @@ The website have the following pages and sections:
 
 * Header
 * Footer
-t* Contact info
+	* Contact info
 * "Home" page
-t* Hero slider
-t* About us
-t* Services
-t* Contact form
+	* Hero slider
+	* About us
+	* Services
+	* Contact form
 * "Nosotros" page
 * "Services" page
-t* Services cards
+	* Services cards
 * "Contacto" page
-t* Map
-t* Contact form
+	* Map
+	* Contact form
 
 # Roadmap
 
