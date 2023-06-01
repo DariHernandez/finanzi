@@ -51,30 +51,30 @@ Project type: **client's project**
 
 # Details
 
-The website have the following pages and sections: \r
-\r
-* Header\r
-* Footer\r
-\t* Contact info\r
-* \\\"Home\\\" page\r
-\t* Hero slider\r
-\t* About us\r
-\t* Services\r
-\t* Contact form\r
-* \\\"Nosotros\\\" page\r
-* \\\"Services\\\" page\r
-\t* Services cards\r
-* \\\"Contacto\\\" page\r
-\t* Map\r
-\t* Contact form
+The website have the following pages and sections: 
+
+* Header
+* Footer
+t* Contact info
+* "Home" page
+t* Hero slider
+t* About us
+t* Services
+t* Contact form
+* "Nosotros" page
+* "Services" page
+t* Services cards
+* "Contacto" page
+t* Map
+t* Contact form
 
 # Roadmap
 
-* [X] Hover animations\r
-* [X] Functional contact forms\r
-* [X] Responsive\r
-* [X] Hero slider\r
-* [X] Dynamic service cards\r
+* [X] Hover animations
+* [X] Functional contact forms
+* [X] Responsive
+* [X] Hero slider
+* [X] Dynamic service cards
 * [X] Embedded map
 
 
