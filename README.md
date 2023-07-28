@@ -1,6 +1,6 @@
 ### DariDev
 
-<div><a href='https://github.com/darideveloper/optima/blob/master/LICENSE' target='_blank'>
+<a href='https://github.com/darideveloper/optima/blob/master/LICENSE' target='_blank'>
             <img src='https://img.shields.io/github/license/darideveloper/optima.svg?style=for-the-badge' alt='MIT License' height='30px'/>
         </a><a href='https://www.linkedin.com/in/francisco-dari-hernandez-6456b6181/' target='_blank'>
                 <img src='https://img.shields.io/static/v1?style=for-the-badge&message=LinkedIn&color=0A66C2&logo=LinkedIn&logoColor=FFFFFF&label=' alt='Linkedin' height='30px'/>
@@ -18,7 +18,7 @@
 
 ### Niels-Bored
 
-<div><a href='https://github.com/darideveloper/optima/blob/master/LICENSE' target='_blank'>
+<a href='https://github.com/darideveloper/optima/blob/master/LICENSE' target='_blank'>
             <img src='https://img.shields.io/github/license/darideveloper/optima.svg?style=for-the-badge' alt='MIT License' height='30px'/>
         </a><a href='mailto:abelsotovaldez@gmail.com' target='_blank'>
                 <img src='https://img.shields.io/static/v1?style=for-the-badge&message=Gmail&color=EA4335&logo=Gmail&logoColor=FFFFFF&label=' alt='Gmail' height='30px'/>
