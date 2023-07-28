@@ -1,5 +1,9 @@
-### DariDev
+<div align='center'>
 
+<div align='center'><br><br><img src='https://github.com/darideveloper/optima/blob/master/logo_small.png?raw=true' alt='Optima' height='80px'/><br><br>
+
+### DariDev
+ 
 <a href='https://github.com/darideveloper/optima/blob/master/LICENSE' target='_blank'>
             <img src='https://img.shields.io/github/license/darideveloper/optima.svg?style=for-the-badge' alt='MIT License' height='30px'/>
         </a><a href='https://www.linkedin.com/in/francisco-dari-hernandez-6456b6181/' target='_blank'>
@@ -14,7 +18,7 @@
                 <img src='https://img.shields.io/static/v1?style=for-the-badge&message=Discord&color=5865F2&logo=Discord&logoColor=FFFFFF&label=' alt='Discord' height='30px'/>
             </a><a href='mailto:darideveloper@gmail.com?subject=Hello Dari Developer' target='_blank'>
                 <img src='https://img.shields.io/static/v1?style=for-the-badge&message=Gmail&color=EA4335&logo=Gmail&logoColor=FFFFFF&label=' alt='Gmail' height='30px'/>
-            </a></div><div align='center'><br><br><img src='https://github.com/darideveloper/optima/blob/master/logo_small.png?raw=true' alt='Optima' height='80px'/>
+            </a></div>
 
 ### Niels-Bored
 
@@ -30,7 +34,7 @@
                 <img src='https://img.shields.io/static/v1?style=for-the-badge&message=GitHub&color=181717&logo=GitHub&logoColor=FFFFFF&label=' alt='Github' height='30px'/>
             </a><a href='https://es.fiverr.com/abelsotovaldez?up_rollout=tr' target='_blank'>
                 <img src='https://img.shields.io/static/v1?style=for-the-badge&message=Fiverr&color=222222&logo=Fiverr&logoColor=1DBF73&label=' alt='Fiverr' height='30px'/>
-            </a></div><div align='center'><br><br>
+            </a></div><br><br>
 
 # Optima
 
