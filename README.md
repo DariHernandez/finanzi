@@ -40,15 +40,13 @@
 
 Visit at: **[darideveloper.github.io/optima](https://darideveloper.github.io/optima/)**
 
-This is a collaborative project between Daridev and Niels-Bored.
+This is a landing page based on the client specification and on the designed provided by him. Developed as a collaborative project between Niels-Bored and Daridev.
 
 Website (in spanish) for the company Optima, with multiple pages, hover animations and contact forms.
 
 Start date: **2022-04-13**
 
 Last update: **2023-04-14**
-
-Project type: **client's project**
 
 </div><br><details>
             <summary>Table of Contents</summary>
