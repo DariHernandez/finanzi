@@ -40,6 +40,8 @@
 
 Visit at: **[darideveloper.github.io/optima](https://darideveloper.github.io/optima/)**
 
+This was a collaborative project between Niels-Bored and Daridev.
+
 Website (in spanish) for the company Optima, with multiple pages, hover animations and contact forms.
 
 Start date: **2022-04-13**
